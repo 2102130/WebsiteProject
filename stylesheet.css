@@ -1,120 +1,41 @@
-html, body {
-  height: 100%;
-	background-color: #fffcd1;
-  width: 100%;
-}
-
-h1{
-	padding: 1px;
-  color: #000000;
-	text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-h2{
-	padding: 0px;
-  color: #000000;
-	text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-a{
-		padding: 2px;
-  color: #000000;
-	text-align: center;
-	  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-p{
-	font-size:16;
-			padding: 0px;
-  color: #000000;
-	text-align: center;
-	  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-img{
-	min-width: 1px;
-	max-width: 200px;
-	min-height: 1px;
-	max-height: 200px;
-	padding-right: 0px;
-}
-	
-
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr 500px 500px 1fr;
-		grid-template-areas: 
-		"logo logo"
-		"title title"
-		"header header"
-		"navbar navbar"
-		"content	content"
-		"sidebar sidebar"
-		"footer footer";
-		grid-gap: 5px;
-	}
-
-.title{
-	grid-area: title;
-}
-
-.logo{
-	grid-area: logo;
-	align-self: center;
-	justify-self: center;
-}
-
-.header{
-	grid-area: header;
-}
-
-.navbar{
-	grid-area: navbar;
-	border: 1px solid;
-}
-
-.sidebar{
-	grid-area: sidebar;
-	justify-self: stretch center;
-	align-self: center;
-}
-
-.content{
-	grid-area: content;
-}
-
-.footer{
-	grid-area: footer;
-}
-
-.credit{
-	grid-area: credit;
-}
-
-.grid div:nth-child(even) {
-	background-color: #faffb3;
-	border: 1px solid;
-}
-
-.grid div:nth-child(odd) {
-	background-color: #69b070;
-	border: 1px solid;
-}
-
-@media screen and (min-width: 736px) 
+#homebanner
 {
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr 500px 500px 1fr;
-		grid-template-areas: 
-		". logo logo ."
-		". title title ."
-		". header header ."
-		". navbar navbar ."
-		". content content ."
-		". sidebar sidebar ."
-		". footer footer .";
-		grid-gap: 5px;
-	}
+	background-color: #CCC;	
+	text-align: center;
+	width: 75%;
+	padding: 10px;
+	margin: 0 auto;
+	font-family:"Gill Sans MT";
+}
+
+#content
+{
+	background-color: #CCC;	
+	text-align: center;
+	width: 75%;
+	padding: 10px;
+	margin: 0 auto;
+	font-family:"Gill Sans MT";
+}
+
+#footer
+{
+  	position: fixed;
+	left: 0;
+  	bottom: 0;
+	width: 100%;
+	background-color: #CCC;
+	color: black;
+	text-align: center;
+	font-family:"Gill Sans MT";
+}
+
+#output
+{
+	background-color: #CCC;	
+	text-align: center;
+	width: 75%;
+	padding: 10px;
+	margin: 0 auto;
+	font-family:"Gill Sans MT";
 }
